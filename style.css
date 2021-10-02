@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Iransans;
+    src: url(./fonts/IRANSansWeb_Medium.woff2);
+}
+
+*{
+    font-family: Iransans;
+}
+
+.clock{
+    background-color: lightpink;
+    border-radius: 50%;
+    border:20px solid rgba(17, 18, 24, 0.133);
+    height:500px;
+    margin: 50px auto;
+    position: relative;
+    width: 500px;
+
+}
+.circle{
+    position: absolute;
+    top: 46%;
+    left: 48%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.hand{
+--rotation:0;
+    position: absolute;
+    transform-origin:bottom;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotation)));
+
+}
+
+.hour{
+    width: 7px;
+    height: 40%;
+    border-left: 10px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 115px solid black;
+    z-index: 5;
+
+}
+
+
+.minute{
+    width: 5px;
+    height: 50%;
+    z-index: 4;
+    border-left: 10px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 135px solid #17a39c;
+
+}
+
+.second{
+    width: 3px;
+    height: 60%;
+    border-left: 10px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 170px solid red;
+    z-index: 3;
+
+}
+
+.number{
+--rotation:0;
+ display: inline-block;
+ font-size: 40px;
+ font-weight: bold;
+ position: absolute;
+
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ transform: rotate(var(--rotation));
+}
+
+.number1{
+    --rotation:30deg;
+}
+.number2{
+    --rotation:60deg;
+}
+.number3{
+    --rotation:90deg;
+}
+.number4{
+    --rotation:120deg;
+}
+.number5{
+    --rotation:150deg;
+}
+.number6{
+    --rotation:180deg;
+}
+.number7{
+    --rotation:210deg;
+
+}
+.number8{
+    --rotation:240deg;
+
+}
+.number9{
+    --rotation:270deg;
+
+}
+.number10{
+    --rotation:300deg;
+
+}
+.number11{
+    --rotation:330deg;
+
+}
+
+
