@@ -29,29 +29,28 @@
 }
 
 .hand{
---rotation:0;
+    width: 0;
+    height: 0;
     position: absolute;
     transform-origin:bottom;
-    left: 50%;
-    bottom: 50%;
-    transform: translateX(-50%) rotate(calc(var(--rotation)));
+
 
 }
 
 .hour{
-    width: 7px;
-    height: 40%;
     border-left: 10px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: 115px solid black;
+    top: 27%;
+    left: 50.5%;
     z-index: 5;
 
 }
 
 
 .minute{
-    width: 5px;
-    height: 50%;
+    top: 22%;
+    left: 50.5%;
     z-index: 4;
     border-left: 10px solid transparent;
     border-right: 6px solid transparent;
@@ -60,8 +59,9 @@
 }
 
 .second{
-    width: 3px;
-    height: 60%;
+    top: 16%;
+    left: 50.5%;
+    z-index: 12;
     border-left: 10px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: 170px solid red;
@@ -70,93 +70,58 @@
 }
 
 .number{
---rotation:0;
  display: inline-block;
  font-size: 40px;
  font-weight: bold;
  position: absolute;
-
- width: 100%;
- height: 100%;
- text-align: center;
- transform: rotate(var(--rotation));
 }
 
 .number1{
-    --rotation:30deg;
+    top: 10%;
+    left: 71%;
 }
 .number2{
-    --rotation:60deg;
+    top: 26%;
+    left: 86%;
 }
 .number3{
-    --rotation:90deg;
+  top: 45%;
+  left: 91%;
 }
 .number4{
-    --rotation:120deg;
+    top: 65%;
+    left: 85%;
 }
 .number5{
-    --rotation:150deg;
+    top: 81%;
+    left: 71%;
 }
 .number6{
-    --rotation:180deg;
+    bottom: 1%;
+    left: 48%;
 }
 .number7{
-    --rotation:210deg;
-
+    top: 81%;
+    left: 25%;
 }
 .number8{
-    --rotation:240deg;
-
+    top: 65%;
+    left: 11%;
 }
 .number9{
-    --rotation:270deg;
-
+    top: 45%;
+    left: 8%;
 }
 .number10{
-    --rotation:300deg;
-
+    top: 24%;
+    left: 10%;
 }
 .number11{
-    --rotation:330deg;
-
+    top: 8%;
+    left: 26%;
 }
 
-
-.input-wrapper{
-    text-align: center;
-    direction: rtl;
-    font-size: 24px;
-    font-weight: bolder;
-    color: black;
-    opacity: .7;
-    }
-    
-    .input{
-        font-size: 20px;
-         height: 50px;
-         width: 50px;
-         margin: 16px 8px 16px;
-         text-align: center;
-    
-     }
-    
-     .error{
-         color: red;
-         padding: 20px;
-     }
-    
-     .btn{
-         border-radius: 7px;
-         display: block;
-         border: none;
-         background-color: teal;
-         color: white;
-         width: 500px;
-         padding: 20px;
-         margin: auto;
-         margin-top: 16px;
-     }
-     button[disabled] {
-         cursor: not-allowed;
-         background-color: red;
-     }
+.number12{
+top: 2%;
+left: 48%;
+}
